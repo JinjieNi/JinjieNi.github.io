@@ -26,14 +26,18 @@
   .gradient-line {
       width: 70%; /* Adjust this value based on your requirement */
       height: 1px;
-      background: linear-gradient(to right, grey, transparent); /* Gradient from grey to transparent */
+      background: linear-gradient(to left, grey, transparent); /* Gradient from grey to transparent */
       border: none;
-      margin: 20px 0; /* Adding some space above and below the line */
+      margin: 10px 0; /* Adding some space above and below the line */
+      margin-left: auto;      /* This will push the line to the right */
+      padding-right: 100px;
   }
 
   .right-text {
       margin: 0; /* Removing default margin from the paragraph */
       font-style: italic;
+      color: grey;
+      padding-right: 100px;
   }
 
   </style>
@@ -116,8 +120,8 @@
     <div class="w3-container w3-center w3-padding-32" id="home">
       <img style="width: 100%;max-width: 600px" alt="profile photo" src="images/santorini_square.JPG">
       <div class="line-text-container">
-      <hr class="gradient-line">
       <p class="right-text">"Before sunset." Oia, Santorini. 2023.</p>
+      <hr class="gradient-line">
       </div>
       <h1 style='font-family: "Garamond", Serif;'>JINJIE NI</h1>
         <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:600px">
