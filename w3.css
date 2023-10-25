@@ -376,8 +376,26 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-2021-text-green-ash{color:#A0DAA9}
 .w3-hover-2021-text-green-ash:hover{color:#ed26e7!important}
 
+.hoverhighlight-orange:hover{color:#DC793E}
+
+
+.gradient-underline {
+    background-image: linear-gradient(to bottom, grey 2px, transparent);
+    background-repeat: no-repeat;
+    background-position: 0 100%; /* Position it at the bottom */
+    /* background-size: 100% 1px;  Set the thickness here */
+    padding-bottom: 5px; /* Optional spacing between the text and underline */
+}
+
+.solid-underline {
+    background-image: linear-gradient(to bottom, #508fa2 1px, #508fa2 1px);
+    background-repeat: no-repeat;
+    background-position: 0 100%; /* Position it at the bottom */
+    background-size: 100% 1px;  /* Set the thickness here */
+    padding-bottom: 2px; /* Optional spacing between the text and underline */
+}
 
 .w3-sidebar a.active-link {
     text-decoration: underline;
-    text-underline-offset: 5px;  /* Adjust this value as needed */
+    text-underline-offset: 5px;
 }
