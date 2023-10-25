@@ -352,7 +352,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 {color:#fff;background-color:#A09998}
 .w3-2020-amberglow
 {color:#fff;background-color:#DC793E}
-.w3-hover-2020-amberglow:hover{color:#9B1B30!important;background-color:#DC793E!important}
+.w3-hover-2020-amberglow:hover{color:#DC793E!important;background-color:#fff!important}
 .w3-2020-samba
 {color:#fff;background-color:#A2242F}
 .w3-2020-sandstone
@@ -375,3 +375,9 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 .w3-2021-text-green-ash{color:#A0DAA9}
 .w3-hover-2021-text-green-ash:hover{color:#ed26e7!important}
+
+
+.w3-sidebar a.active-link {
+    text-decoration: underline;
+    text-underline-offset: 5px;  /* Adjust this value as needed */
+}

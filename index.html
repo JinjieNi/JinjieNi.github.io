@@ -23,7 +23,7 @@
       height: 1px;
       background: linear-gradient(to left, grey, transparent); /* Gradient from grey to transparent */
       border: none;
-      margin: 0 107px 10px 0; /* Top, Right, Bottom, Left */
+      margin: 0 0 10px 0; /* Top, Right, Bottom, Left */
       float: right;
   }
 
@@ -32,7 +32,7 @@
       font-size: 12px;
       color: grey;
       text-align: right;
-      padding-right: 107px;  /* This will give some space to the right side of the text */
+
       clear: both;
       margin-top: 0.2rem;
       margin-bottom: 0.2rem;
@@ -47,6 +47,12 @@
   $(document).ready(function(){
     // Add smooth scrolling to all links
     $("a").on('click', function(event) {
+
+      // Remove 'active-link' class from all other links in the sidebar
+      $(".w3-sidebar a").removeClass("active-link");
+
+      // Add 'active-link' class to the clicked link
+      $(this).addClass("active-link");
 
       // Make sure this.hash has a value before overriding default behavior
       if (this.hash !== "") {
@@ -76,7 +82,7 @@
 <body class="w3-content" style="max-width:1000px">
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-2018-sailor-blue w3-collapse w3-top w3-right" style="z-index:3;width:150px" id="mySidebar">
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-top w3-right" style="z-index:3;width:150px; color:#0e576e; background-color: #fff" id="mySidebar">
   <div class="w3-container w3-centered w3-2019-text-fruit-dove w3-hover-2019-text-fruit-dove w3-padding-16">
     <h1 style='font-family: "Brush Script MT", Serif, Fantasy;'><i>Oliver</i></h1>
     <p style='font-family: "Lucida Handwriting", Fantasy, Serif;'><i>Patience</i></p>
@@ -116,10 +122,13 @@
 
 <!-- The Home Section -->
     <div class="w3-container w3-center w3-padding-32" id="home">
+      <div style="margin: 0 auto; max-width: 600px;">
       <img style="width: 100%;max-width: 600px" alt="profile photo" src="images/santorini_square.JPG">
       <p class="right-text">"Before sunset". Oia, Santorini, 2023.</p>
       <hr class="gradient-line">
-      <h1 style='font-family: "Garamond", Serif; text-align: center;'>JINJIE NI</h1>
+      <div style="clear:both;"></div>
+      </div>
+      <h1 style='font-family: "Garamond", Serif; text-align: center;'>Jinjie Ni</h1>
         <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:600px">
             Hi there! I'm <i>Jinjie</i>. I'm currently a final year Ph.D. candidate under the supervision of Prof. <a href="https://sentic.net/erikcambria/" target="_blank">Erik Cambria</a> at the School of Computer Science and Engineering, <a href="https://www.ntu.edu.sg/" target="_blank">Nanyang Technological University</a>, Singapore.
             Before the graduation of my Ph.D., I took several research internships at institutions such as DAMO Alibaba SG, Chinese Academy of Sciences, and Harvard University. Being a big fan of road trips, I also love working out at the gym, playing basketball, and watching various games and TV shows.
@@ -138,7 +147,6 @@
           <a href="https://www.linkedin.com/in/jinjie-ni-799a201b2/" target="_blank">LinkedIn</a> &nbsp/&nbsp
           <a href="https://www.zhihu.com/people/ni-jin-jie-85" target="_blank">Zhi Hu</a>
         </p>
-        </tbody></table>
   </div>
 
  <!-- The Publications Section -->
