@@ -23,17 +23,16 @@
       height: 1px;
       background: linear-gradient(to left, grey, transparent); /* Gradient from grey to transparent */
       border: none;
-      margin: 0px 0; /* Adding some space above and below the line */
-      margin-left: auto;      /* This will push the line to the right */
-      padding-right: 205px;
+      margin: 0 105px 0 0; /* Top, Right, Bottom, Left */
+      float: right;
   }
 
   .right-text {
-      margin: 0; /* Removing default margin from the paragraph */
       font-style: italic;
       color: grey;
-      margin-left: auto;
-      font-size: 12px;
+      text-align: right;
+      padding-right: 105px;  /* This will give some space to the right side of the text */
+      clear: both;
   }
 
   </style>
