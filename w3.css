@@ -399,3 +399,70 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     text-decoration: underline;
     text-underline-offset: 5px;
 }
+
+.education-entry .university {
+    /* styles for the university name */
+    display: flex;
+    justify-content: space-between; /* This pushes the two spans apart */
+    align-items: center;
+}
+
+.education-entry .degree {
+    /* styles for the degree */
+    margin-left: 15px; /* This will give some space on the left to make it indented */
+}
+
+.education-entry .thesis {
+    /* styles for the thesis */
+    margin-left: 30px; /* Greater space on the left to make it further indented */
+}
+
+.school {
+    flex: 1; /* This allows the school name to take up any available space */
+    text-align: left;
+}
+
+.year {
+    margin-left: auto; /* This pushes the year to the right */
+    text-align: right;
+}
+
+.industry-entry .industry-main {
+    /* styles for the degree */
+    display: flex;
+    justify-content: space-between; /* This pushes the two spans apart */
+    align-items: center;
+}
+
+.industry-entry .industry-description {
+    /* styles for the degree */
+    margin-left: 15px; /* This will give some space on the left to make it indented */
+}
+
+.year-table {
+    border-collapse: collapse; /* Ensure no space between table cells */
+    width: 100%;
+}
+
+.year-table td {
+    border: none; /* Remove cell borders */
+    vertical-align: top; /* Align content to the top of the cells */
+    padding: 0 0; /* Add padding to top and bottom of cells */
+}
+
+.year-column {
+    text-align: left;
+    vertical-align: center;
+}
+
+.entry-column {
+    text-align: left;
+    vertical-align: center;
+}
+
+.spacer-row td {
+    height: 7px; /* or whatever space you want */
+    border: none; /* if you don't want borders */
+    padding: 0; /* if you don't want any padding */
+    background: transparent; /* if you want the row to be transparent */
+}
