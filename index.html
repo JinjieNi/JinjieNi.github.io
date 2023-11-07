@@ -168,11 +168,11 @@
 
   <div class="w3-container w3-padding-32" id="News" style="width: 100%; max-width: 737px; margin: auto; text-align: left;">
       <div class="flex-container">
-        <div class="update-outbox" style="width: 100%; max-width: 400px; font-family: 'chirp', sans-serif; margin-right: 5px;">
+        <div class="update-outbox" style="width: 100%; font-family: 'chirp', sans-serif; margin-right: 5px;">
           <div class="updates-header" style="font-size: 20px; font-weight: bolder; font-family: 'chirp-bold', sans-serif;">⚡ Updates</div>
           <div class="updates-content">
             <div class="updates-section">
-              <table class="year-table" style="width: 100%; max-width: 400px; text-align: left;">
+              <table class="year-table" style="width: 100%; text-align: left;">
                 <tr>
                   <td class="year-column" style="width: 70px; padding: 2px 0;">2023.08</td>
                   <td class="entry-column" style="padding: 2px 0;">📰 Our paper reviewing Semantic Processing is available on <a class="solid-underline" href="https://arxiv.org/abs/2310.18345" target="_blank" style="text-decoration: none; color:	#508fa2;">arxiv</a>, check it out!</td>
@@ -225,7 +225,7 @@
             </div>
           </div>
         </div>
-        <div id="twitter-widget-container">
+        <div class="twitter-container" id="twitter-widget-container">
           <a class="twitter-timeline" data-width="300" data-height="600" href="https://twitter.com/NiJinjie?ref_src=twsrc%5Etfw">Tweets by NiJinjie</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
       </div>
@@ -710,39 +710,6 @@ function w3_close() {
   document.getElementById("myOverlay").style.display = "none";
 }
 
-
-
-
-// Function to check if the widget has loaded
-function checkTwitterWidget() {
-    // Attempt to find the iframe inside the widget
-    var iframe = document.querySelector('#twitter-widget-container iframe');
-    if (iframe) {
-        // Widget loaded, do nothing or perform some action
-    } else {
-        // Widget did not load, hide the container
-        document.getElementById('twitter-widget-container').classList.add('hide');
-    }
-}
-
-// Function to handle window resizing
-function handleResize() {
-    var container = document.getElementById('twitter-widget-container');
-    if (window.innerWidth < 300) { // or whatever your threshold is
-        container.classList.add('hide');
-    } else {
-        container.classList.remove('hide');
-    }
-}
-
-// Event listener for window resize
-window.addEventListener('resize', handleResize);
-
-// Initial check when the page loads
-handleResize();
-
-// Set a timeout to check if the Twitter widget has loaded after 5 seconds
-setTimeout(checkTwitterWidget, 5000);
 
 </script>
 

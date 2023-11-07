@@ -535,6 +535,9 @@ border-bottom: none;
     font-style: normal;
   }
 
-#twitter-widget-container.hide {
-    display: none;
-}
+@media screen and (max-width: 800px) {
+    .twitter-container {
+      display: none;
+    }
+  }
+  
