@@ -83,15 +83,15 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-cell-row{display:table;width:100%}.w3-cell{display:table-cell}
 .w3-cell-top{vertical-align:top}.w3-cell-middle{vertical-align:middle}.w3-cell-bottom{vertical-align:bottom}
 .w3-hide{display:none!important}.w3-show-block,.w3-show{display:block!important}.w3-show-inline-block{display:inline-block!important}
-@media (max-width:1205px){.w3-auto{max-width:95%}}
+@media (max-width:1167px){.w3-auto{max-width:100%}}
 @media (max-width:600px){.w3-modal-content{margin:0 10px;width:auto!important}.w3-modal{padding-top:30px}
 .w3-dropdown-hover.w3-mobile .w3-dropdown-content,.w3-dropdown-click.w3-mobile .w3-dropdown-content{position:relative}	
 .w3-hide-small{display:none!important}.w3-mobile{display:block;width:100%!important}.w3-bar-item.w3-mobile,.w3-dropdown-hover.w3-mobile,.w3-dropdown-click.w3-mobile{text-align:center}
 .w3-dropdown-hover.w3-mobile,.w3-dropdown-hover.w3-mobile .w3-btn,.w3-dropdown-hover.w3-mobile .w3-button,.w3-dropdown-click.w3-mobile,.w3-dropdown-click.w3-mobile .w3-btn,.w3-dropdown-click.w3-mobile .w3-button{width:100%}}
 @media (max-width:768px){.w3-modal-content{width:500px}.w3-modal{padding-top:50px}}
-@media (min-width:1130px){.w3-modal-content{width:900px}.w3-hide-large{display:none!important}.w3-sidebar.w3-collapse{display:block!important}}
+@media (min-width:1167px){.w3-modal-content{width:900px}.w3-hide-large{display:none!important}.w3-sidebar.w3-collapse{display:block!important}}
 @media (max-width:992px) and (min-width:601px){.w3-hide-medium{display:none!important}}
-@media (max-width:1130px){.w3-sidebar.w3-collapse{display:none}.w3-main{margin-left:0!important;margin-right:0!important}.w3-auto{max-width:100%}}
+@media (max-width:1167px){.w3-sidebar.w3-collapse{display:none}.w3-main{margin-left: auto; margin-right: auto; padding-left: 10px; padding-right: 10px;}.w3-auto{max-width:100%}}
 .w3-top,.w3-bottom{position:fixed;width:100%;z-index:1}.w3-top{top:0}.w3-bottom{bottom:0}
 .w3-overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:2}
 .w3-display-topleft{position:absolute;left:0;top:0}.w3-display-topright{position:absolute;right:0;top:0}
@@ -448,9 +448,11 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     border: none; /* Remove cell borders */
     vertical-align: top; /* Align content to the top of the cells */
     padding: 0 0; /* Add padding to top and bottom of cells */
+    word-wrap: break-word;
 }
 
 .year-column {
+    width: 140px;
     text-align: left;
     vertical-align: center;
 }
@@ -466,3 +468,69 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     padding: 0; /* if you don't want any padding */
     background: transparent; /* if you want the row to be transparent */
 }
+
+.update-outbox {
+    height: 600px;       /* Set a fixed height */
+    border: 1px solid #cfd9de;  /* Optional, for visual context */
+    padding: 0px;      /* Optional, for spacing */
+    border-radius: 12px;
+}
+
+.updates-content {
+    height: 539px;
+    padding: 20px;       
+    overflow-y: auto;    /* Enable vertical scrolling */
+    overflow-x: hidden;  /* Disable horizontal scrolling, optional */
+    &::-webkit-scrollbar-track {
+        background: transparent; /* Makes scrollbar track background transparent */
+    }
+}
+
+.updates-header {
+    height: 49px;
+    border-bottom: 1px solid #cfd9de; /* Grey line below the header */
+    padding-top: 11px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    /*background-color: #f9f9f9; Adjust background color as needed */
+    /* No border-radius here; it's handled by the container */
+  }
+
+/* If you have multiple sections inside your content, add the border to these */
+.updates-section {
+border-bottom: 1px solid #cfd9de; /* Grey line between sections */
+padding-bottom: 10px; /* Space at the bottom of the section */
+margin-bottom: 10px; /* Space after the line */
+}
+
+/* Last child should not have a bottom border to avoid a double line at the bottom */
+.updates-section:last-child {
+border-bottom: none;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* This will put some space between the two items */
+  }
+
+@font-face {
+    font-family: 'chirp';
+    src: url('/fonts/chirp-regular-web.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'chirp-bold';
+    src: url('/fonts/chirp-bold-web.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'chirp-heavy';
+    src: url('/fonts/chirp-heavy-web.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
