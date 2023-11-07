@@ -534,3 +534,7 @@ border-bottom: none;
     font-weight: normal;
     font-style: normal;
   }
+
+#twitter-widget-container.hide {
+    display: none;
+}
