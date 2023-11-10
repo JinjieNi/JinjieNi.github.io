@@ -452,7 +452,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 }
 
 .year-column {
-    width: 140px;
+    width: 50px;
     text-align: left;
     vertical-align: center;
 }
@@ -540,4 +540,18 @@ border-bottom: none;
       display: none;
     }
   }
+
+
+.line-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.right-aligned {
+    /* This text will be pushed to the right */
+    margin-left: auto;
+}
+
   
