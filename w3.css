@@ -463,7 +463,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 }
 
 .spacer-row td {
-    height: 7px; /* or whatever space you want */
+    height: 9px; /* or whatever space you want */
     border: none; /* if you don't want borders */
     padding: 0; /* if you don't want any padding */
     background: transparent; /* if you want the row to be transparent */
