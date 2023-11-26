@@ -554,4 +554,11 @@ border-bottom: none;
     margin-left: auto;
 }
 
+
+
+ul.custom-bullets {
+    list-style-type: square; /* Or circle, disc, etc. */
+  }
+
+
   
