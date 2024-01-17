@@ -561,4 +561,7 @@ ul.custom-bullets {
   }
 
 
-  
+::selection {
+    color: white; /* Text color of the selected text */
+    background: #508fa2; /* Background color of the selected text */
+}
