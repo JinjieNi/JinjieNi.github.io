@@ -50,6 +50,21 @@
       margin-bottom: 0.2rem;
   }
 
+  /* Twitter sidebar styling */
+  .twitter-container {
+      position: fixed;
+      top: 50px; /* Adjust to position it vertically */
+      right: 20px; /* Space between the sidebar and the right edge */
+      z-index: 1000; /* Ensure it stays on top */
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 1200px) {
+      .twitter-container {
+        display: none; /* Hide sidebar on smaller screens */
+      }
+    }
+
   </style>
 
   <link rel="icon" type="image/png" href="images/Ni_icon.png">
@@ -87,6 +102,8 @@
     });
   });
   </script>
+
+
 
 </head>
 
@@ -138,7 +155,7 @@
 <div class="w3-hide-large" style="margin-top:83px"></div>
 
 <!-- The Home Section -->
-    <div class="w3-container w3-center w3-padding-32" id="About">
+  <div class="w3-container w3-center w3-padding-32" id="About">
       <h1 style='text-align: center;'>Jinjie Ni</h1>
       <p style='text-align: center; font-size: 15px;'>a.k.a. Oliver</p>
       <!-- <div style="margin: 0 auto; max-width: 600px;">
@@ -180,13 +197,13 @@
         </p>
   </div>
 
-  <div class="w3-container w3-padding-32" id="News" style="width: 100%; max-width: 737px; margin: auto; text-align: left;">
-    <div class="flex-container">
-        <div class="update-outbox" style="width: 100%; font-family: 'chirp', sans-serif; margin-right: 5px;">
-          <div class="updates-header" style="font-size: 20px; font-weight: bolder; font-family: 'chirp-bold', sans-serif;">⚡ Updates</div>
-          <div class="updates-content">
-            <div class="updates-section">
-              <table class="year-table" style="width: 100%; text-align: left;">
+  <div class="w3-container w3-padding-16" id="News" style="width: 100%; max-width: 650px; height: 400px; margin: auto; text-align: left; margin-bottom: 50px; margin-top: 0px;">
+    <div class="flex-container"  style="width: 100%; height: 400px">
+        <div class="update-outbox" style="width: 100%; height: 400px; font-family: 'chirp', sans-serif; margin-right: 5px;">
+          <div class="updates-header" style="font-size: 20px; font-weight: bolder; font-family: 'chirp-bold', sans-serif; ">⚡ Updates</div>
+          <div class="updates-content"  style="width: 100%; height: 350px;">
+            <div class="updates-section"  style="width: 100%; height: 350px;">
+              <table class="year-table" style="width: 100%; text-align: left; height: 350px;">
                 <tr>
                   <td class="year-column" style="width: 70px; padding: 2px 0;">2024.06</td>
                   <td class="entry-column" style="padding: 2px 0;">📰 <a style="color:#508fa2;"><b>MixEval</b></a> is available on <a class="solid-underline" href="https://arxiv.org/abs/2406.06565" target="_blank" style="text-decoration: none; color:	#508fa2;">arXiv</a>. We also provide rigorous insights and meta-evaluations for LLM evaluation, check it out!</td>
@@ -258,9 +275,6 @@
                 </table>
             </div>
           </div>
-        </div>
-        <div class="twitter-container" id="twitter-widget-container">
-          <a class="twitter-timeline" data-width="300" data-height="600" href="https://twitter.com/NiJinjie?ref_src=twsrc%5Etfw">Tweets by NiJinjie</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
       </div>
   </div>
@@ -477,7 +491,7 @@
     </table>
   </div>
 
- <div class="w3-container w3-padding-32" id="Papers" style="width: 100%; margin: auto; text-align: left; padding-right: 42px;">
+  <div class="w3-container w3-padding-32" id="Papers" style="width: 100%; margin: auto; text-align: left; padding-right: 42px;">
     <table class="year-table" style="margin-left: 0px;">
       <tr>
         <td class="year-column"></td>
@@ -643,137 +657,141 @@
   
   </div>
 
-<div class="w3-container w3-padding-32" id="Activities" style="width: 100%; margin: auto; text-align: left; padding-right: 42px;">
-    <table class="year-table" style="margin-left: 0px;">
-      <tr>
-        <td class="year-column"></td>
-        <td class="entry-column"><h2>Activities</h2></td>
-      </tr>
-      <tr>
-        <td class="year-column"></td>
-        <td class="entry-column"><h3>Teaching</h3></td>
-      </tr>
-      <!-- SC1003: Introduction to Computational Thinking and Programming -->
-      <tr>
-          <td class="year-column">2021</td>
-          <td class="entry-column">NTU-SC1003: Introduction to Computational Thinking and Programming</td>
-      </tr>
-      <tr>
+  <div class="w3-container w3-padding-32" id="Activities" style="width: 100%; margin: auto; text-align: left; padding-right: 42px;">
+      <table class="year-table" style="margin-left: 0px;">
+        <tr>
           <td class="year-column"></td>
-          <td class="entry-column">Teaching Assistant</td>
-      </tr>
-      <tr class="spacer-row">
+          <td class="entry-column"><h2>Activities</h2></td>
+        </tr>
+        <tr>
+          <td class="year-column"></td>
+          <td class="entry-column"><h3>Teaching</h3></td>
+        </tr>
+        <!-- SC1003: Introduction to Computational Thinking and Programming -->
+        <tr>
+            <td class="year-column">2021</td>
+            <td class="entry-column">NTU-SC1003: Introduction to Computational Thinking and Programming</td>
+        </tr>
+        <tr>
+            <td class="year-column"></td>
+            <td class="entry-column">Teaching Assistant</td>
+        </tr>
+        <tr class="spacer-row">
+            <td colspan="2"></td>
+        </tr>
+
+        <!-- CE2100: Probability and Statistics for Computing -->
+        <tr>
+            <td class="year-column"></td>
+            <td class="entry-column">NTU-CE2100: Probability and Statistics for Computing</td>
+        </tr>
+        <tr>
+            <td class="year-column"></td>
+            <td class="entry-column">Lecturer</td>
+        </tr>
+        <tr class="spacer-row">
+            <td colspan="2"></td>
+        </tr>
+
+        <!-- CE1113: Physics for Computing -->
+        <tr>
+            <td class="year-column">2020</td>
+            <td class="entry-column">NTU-CE1113: Physics for Computing</td>
+        </tr>
+        <tr>
+            <td class="year-column"></td>
+            <td class="entry-column">Teaching Assistant</td>
+        </tr>
+        <tr class="spacer-row">
+            <td colspan="2"></td>
+        </tr>
+
+        <!-- CZ2007: Introduction To Databases -->
+        <tr>
+            <td class="year-column"></td>
+            <td class="entry-column">NTU-CZ2007: Introduction To Databases</td>
+        </tr>
+        <tr>
+            <td class="year-column"></td>
+            <td class="entry-column">Teaching Assistant</td>
+        </tr>
+        <tr class="spacer-row">
+            <td colspan="2"></td>
+        </tr>
+
+        <!-- CZ2004: Human Computer Interaction -->
+        <tr>
+            <td class="year-column"></td>
+            <td class="entry-column">NTU-CZ2004: Human Computer Interaction</td>
+        </tr>
+        <tr>
+            <td class="year-column"></td>
+            <td class="entry-column">Teaching Assistant</td>
+        </tr>
+
+      </table>
+
+      <table class="year-table" style="margin-left: 0px; margin-top: 10px;">
+        <tr>
+          <td class="year-column"></td>
+          <td class="entry-column"><h3>Services</h3></td>
+          <td class="entry-column"></td>
+        </tr>
+        <tr class="spacer-row">
           <td colspan="2"></td>
-      </tr>
-
-      <!-- CE2100: Probability and Statistics for Computing -->
-      <tr>
-          <td class="year-column"></td>
-          <td class="entry-column">NTU-CE2100: Probability and Statistics for Computing</td>
-      </tr>
-      <tr>
-          <td class="year-column"></td>
-          <td class="entry-column">Lecturer</td>
-      </tr>
-      <tr class="spacer-row">
+        </tr>
+        <tr>
+            <td class="year-column"></td>
+            <td class="entry-column">Conference PC Member / Reviewer</td>
+            <td class="entry-column"">Neurips 2024, ACL 2023, ACL 2024, EMNLP 2023, EMNLP 2024, AAAI 2023, ICASSP 2023</td>
+        </tr>
+        <tr class="spacer-row">
           <td colspan="2"></td>
-      </tr>
-
-      <!-- CE1113: Physics for Computing -->
-      <tr>
-          <td class="year-column">2020</td>
-          <td class="entry-column">NTU-CE1113: Physics for Computing</td>
-      </tr>
-      <tr>
-          <td class="year-column"></td>
-          <td class="entry-column">Teaching Assistant</td>
-      </tr>
-      <tr class="spacer-row">
+        </tr>
+        <tr>
+            <td class="year-column"></td>
+            <td class="entry-column">Journal Reviewer</td>
+            <td class="entry-column"">Knowledge-Based Systems, Information Fusion, Artificial Intelligence Review, Cognitive Computation</td>
+        </tr>
+        <tr class="spacer-row">
           <td colspan="2"></td>
-      </tr>
-
-      <!-- CZ2007: Introduction To Databases -->
-      <tr>
-          <td class="year-column"></td>
-          <td class="entry-column">NTU-CZ2007: Introduction To Databases</td>
-      </tr>
-      <tr>
-          <td class="year-column"></td>
-          <td class="entry-column">Teaching Assistant</td>
-      </tr>
-      <tr class="spacer-row">
+        </tr>
+        <tr>
+            <td class="year-column"></td>
+            <td class="entry-column">Co-organizer</td>
+            <td class="entry-column"">MLNLP community</td>
+        </tr>
+        <tr class="spacer-row">
           <td colspan="2"></td>
-      </tr>
+        </tr>
+        <tr>
+          <td class="year-column"></td>
+          <td class="entry-column">Co-Editor</td>
+          <td class="entry-column"">Lena’s NLP Course (Chinese Edition)</td>
+        </tr>
+        <tr class="spacer-row">
+          <td colspan="2"></td>
+        </tr>
+        <tr>
+          <td class="year-column"></td>
+            <td class="entry-column">Lecturer</td>
+            <td class="entry-column"">GC & CAO Seminar</td>
+        </tr>
+        <tr class="spacer-row">
+          <td colspan="2"></td>
+        </tr>
+        <tr>
+          <td class="year-column"></td>
+            <td class="entry-column">Host</td>
+            <td class="entry-column"">3rd MLNLP Seminar - Towards Generating Deep Questions from Text</td>
+        </tr>
+      </table>
+  </div>
 
-      <!-- CZ2004: Human Computer Interaction -->
-      <tr>
-          <td class="year-column"></td>
-          <td class="entry-column">NTU-CZ2004: Human Computer Interaction</td>
-      </tr>
-      <tr>
-          <td class="year-column"></td>
-          <td class="entry-column">Teaching Assistant</td>
-      </tr>
-
-    </table>
-
-    <table class="year-table" style="margin-left: 0px; margin-top: 10px;">
-      <tr>
-        <td class="year-column"></td>
-        <td class="entry-column"><h3>Services</h3></td>
-        <td class="entry-column"></td>
-      </tr>
-      <tr class="spacer-row">
-        <td colspan="2"></td>
-      </tr>
-      <tr>
-          <td class="year-column"></td>
-          <td class="entry-column">Conference PC Member / Reviewer</td>
-          <td class="entry-column"">Neurips 2024, ACL 2023, ACL 2024, EMNLP 2023, EMNLP 2024, AAAI 2023, ICASSP 2023</td>
-      </tr>
-      <tr class="spacer-row">
-        <td colspan="2"></td>
-      </tr>
-      <tr>
-          <td class="year-column"></td>
-          <td class="entry-column">Journal Reviewer</td>
-          <td class="entry-column"">Knowledge-Based Systems, Information Fusion, Artificial Intelligence Review, Cognitive Computation</td>
-      </tr>
-      <tr class="spacer-row">
-        <td colspan="2"></td>
-      </tr>
-      <tr>
-          <td class="year-column"></td>
-          <td class="entry-column">Co-organizer</td>
-          <td class="entry-column"">MLNLP community</td>
-      </tr>
-      <tr class="spacer-row">
-        <td colspan="2"></td>
-      </tr>
-      <tr>
-        <td class="year-column"></td>
-        <td class="entry-column">Co-Editor</td>
-        <td class="entry-column"">Lena’s NLP Course (Chinese Edition)</td>
-      </tr>
-      <tr class="spacer-row">
-        <td colspan="2"></td>
-      </tr>
-      <tr>
-        <td class="year-column"></td>
-          <td class="entry-column">Lecturer</td>
-          <td class="entry-column"">GC & CAO Seminar</td>
-      </tr>
-      <tr class="spacer-row">
-        <td colspan="2"></td>
-      </tr>
-      <tr>
-        <td class="year-column"></td>
-          <td class="entry-column">Host</td>
-          <td class="entry-column"">3rd MLNLP Seminar - Towards Generating Deep Questions from Text</td>
-      </tr>
-    </table>
 </div>
 
+<div class="twitter-container" id="twitter-widget-container">
+  <a class="twitter-timeline" data-width="300" data-height="1200" href="https://twitter.com/NiJinjie?ref_src=twsrc%5Etfw">Tweets by NiJinjie</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
  <!-- PDF resume/CV -->
 <!--   <div class="w3-container w3-padding-32" id="DOCS">
