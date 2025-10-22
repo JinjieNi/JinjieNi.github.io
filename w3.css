@@ -452,9 +452,9 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 }
 
 .year-column {
-    width: 50px;
+    width: 60px;
     text-align: left;
-    vertical-align: center;
+    vertical-align: middle;
 }
 
 .entry-column {
@@ -481,9 +481,10 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     padding: 20px;       
     overflow-y: auto;    /* Enable vertical scrolling */
     overflow-x: hidden;  /* Disable horizontal scrolling, optional */
-    &::-webkit-scrollbar-track {
-        background: transparent; /* Makes scrollbar track background transparent */
-    }
+}
+
+.updates-content::-webkit-scrollbar-track {
+    background: transparent; /* Makes scrollbar track background transparent */
 }
 
 .updates-header {
