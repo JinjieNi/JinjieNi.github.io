@@ -517,21 +517,21 @@ border-bottom: none;
 
 @font-face {
     font-family: 'chirp';
-    src: url('/fonts/chirp-regular-web.woff') format('woff');
+    src: url('fonts/chirp-regular-web.woff') format('woff');
     font-weight: normal;
     font-style: normal;
   }
 
 @font-face {
     font-family: 'chirp-bold';
-    src: url('/fonts/chirp-bold-web.woff') format('woff');
+    src: url('fonts/chirp-bold-web.woff') format('woff');
     font-weight: normal;
     font-style: normal;
   }
 
 @font-face {
     font-family: 'chirp-heavy';
-    src: url('/fonts/chirp-heavy-web.woff') format('woff');
+    src: url('fonts/chirp-heavy-web.woff') format('woff');
     font-weight: normal;
     font-style: normal;
   }
